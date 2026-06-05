@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Pizzería Bella Italia! - Las mejores pizzas</title>
+    <style>
+        /* Animación para que el título principal "pulse" y llame la atención */
+        @keyframes pulso {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Animación de balanceo para las ofertas */
+        @keyframes balanceo {
+            0% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+
+        .titulo-animado {
+            animation: pulso 2s infinite;
+        }
+
+        .oferta-animada {
+            animation: balanceo 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body style="background-color: #fceade; color: #333; margin: 0; padding: 20px; text-align: center;">
+
+    <!-- TEXTO EN MOVIMIENTO (Cinta de bienvenida superior) -->
+    <marquee bgcolor="#e63946" style="color: white; font-family: 'Arial Black', Gadget, sans-serif; font-size: 20px; padding: 10px;" scrollamount="8">
+        🍕 ¡BIENVENIDOS A BELLA ITALIA! • ENVIOS GRATIS EN ZONA CENTRO • LLAMA YA AL 555-PIZZA 🍕
+    </marquee>
+
+    <br><br>
+
+    <!-- TÍTULO PRINCIPAL (Letra Impact y animación de pulso) -->
+    <div class="titulo-animado">
+        <h1 style="font-family: 'Impact', Charcoal, sans-serif; font-size: 60px; color: #e63946; margin: 0; text-shadow: 2px 2px #ffb703;">
+            PIZZERÍA BELLA ITALIA
+        </h1>
+        <p style="font-family: 'Georgia', serif; font-style: italic; font-size: 22px; color: #2a9d8f;">
+            "El verdadero sabor de la leña en tu mesa"
+        </p>
+    </div>
+
+    <br>
+
+    <!-- IMAGEN CENTRAL CON MOVIMIENTO SUTIL -->
+    <img class="titulo-animado" src="Pizza_Queso.jpg" alt="Pizza deliciosa con queso derretido" width="250" style="border-radius: 20px; border: 5px solid #ffb703;">
+
+    <br><br><br>
+
+    <!-- MENÚ / SECCIONES CON DIFERENTES TIPOS DE LETRA -->
+    <table border="0" width="80%" align="center" cellspacing="20">
+        <tr>
+            <!-- Columna 1 -->
+            <td width="50%" bgcolor="#ffffff" style="padding: 20px; border-radius: 15px; box-shadow: 5px 5px 10px #ccc;">
+                <h2 style="font-family: 'Courier New', Courier, monospace; color: #d62828; font-size: 28px;">
+                    [ NUESTRO MENÚ ]
+                </h2>
+                <ul style="text-align: left; font-family: 'Trebuchet MS', sans-serif; font-size: 18px; line-height: 1.8;">
+                    <li><strong>Pepperoni Suprema:</strong> Doble queso y mucho sabor.</li>
+                    <li><strong>Mexicana Especial:</strong> Chorizo, jalapeño y cebolla.</li>
+                    <li><strong>Cuatro Quesos:</strong> Mozzarella, cheddar, provolone y azul.</li>
+                </ul>
+            </td>
+            
+            <!-- Columna 2 (Letra divertida y animación de balanceo) -->
+            <td width="50%" bgcolor="#ffb703" class="oferta-animada" style="padding: 20px; border-radius: 15px;">
+                <h2 style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #fff; font-size: 32px; text-shadow: 2px 2px #d62828;">
+                    ¡PROMO DE HOY!
+                </h2>
+                <p style="font-family: 'Lucida Sans', sans-serif; font-size: 20px; color: #003049;">
+                    En la compra de cualquier Pizza Grande...<br>
+                    <strong>¡Te llevas unas papas fritas y un refresco GRATIS!</strong>
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- SEGUNDO TEXTO EN MOVIMIENTO (Hacia el lado contrario) -->
+    <marquee direction="right" bgcolor="#2a9d8f" style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 18px; padding: 8px;" scrollamount="6">
+        ⭐⭐⭐⭐⭐ "La mejor pizza de la ciudad" - Reseña de Google
+    </marquee>
+
+    <br><br><br>
+
+    <!-- PIE DE PÁGINA -->
+    <hr size="2" color="#e63946">
+    <p style="font-family: 'Arial', sans-serif; font-size: 14px; color: #777;">
+        © 2026 Pizzería Bella Italia. Todos los derechos reservados.
+    </p>
+
+</body>
+</html>
